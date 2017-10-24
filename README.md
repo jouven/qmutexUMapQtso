@@ -1,5 +1,5 @@
 # qmutexUMapQtso
-Simple helper library to use/"organize" mutex objects using an unordered_map
+Simple helper C++ library to use/"organize" qmutex objects using an unordered_map
 
 Compilation
 -----------

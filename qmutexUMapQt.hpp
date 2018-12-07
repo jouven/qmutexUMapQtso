@@ -8,6 +8,7 @@
 #include <string>
 #include <unordered_map>
 
+//FUTURE make a class instead and use the same formula as actonDataHuc_c from actonQtso
 
 extern std::unordered_map<std::string, std::unique_ptr<QMutex>> const & mutexUMap_ext_con_f();
 

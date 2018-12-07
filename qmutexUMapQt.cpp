@@ -22,7 +22,7 @@ QMutex* getAddMutex_f(const std::string &key_par_con)
     }
     else
     {
-       auto emplaceResult(mutexUMap_ext_f().emplace(key_par_con, new QMutex));
+       auto emplaceResult(mutexUMap_ext_f().emplace(key_par_con, std::make_unique<QMutex>()));
        return emplaceResult.first->second.get();
     }
 }

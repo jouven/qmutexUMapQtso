@@ -47,9 +47,7 @@ CONFIG(release, debug|release){
 }
 #debug
 CONFIG(debug, debug|release){
-    LIBS += -L$${MYPATH}home/jouven/mylibs/debug -lbackwardSTso -ltimeso
-!win32: LIBS += -lboost_date_time
-win32: LIBS += -lboost_date_time-mt
+    LIBS += -L$${MYPATH}home/jouven/mylibs/debug
     DEPENDPATH += $${MYPATH}home/jouven/mylibs/debug
     QMAKE_RPATHDIR += $${MYPATH}home/jouven/mylibs/debug
     DEFINES += DEBUGJOUVEN
